@@ -6,6 +6,7 @@ import Splash from "./src/Screens/splash";
 import Login from "./src/Screens/login";
 import Signup from "./src/Screens/signup";
 import Home from "./src/Screens/home";
+import Details from "./src/Screens/Details";
 import ForgotPassword from "./src/Screens/forgotpassword";
 
 
@@ -15,7 +16,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Splash" 
+        initialRouteName="Splach" 
         screenOptions={{
           headerShown: false,
         }}
@@ -24,6 +25,7 @@ const App = () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Details" component={Details} />
         <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
       </Stack.Navigator>
     </NavigationContainer>

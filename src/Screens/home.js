@@ -9,6 +9,7 @@ import {
 import { ProductsTitle } from "../Components/ProductsTitle";
 import ProductsCarousel from "../Components/ProductsCarousel";
 import BeveragesCarousel from "../Components/BeveragesCarousel";
+import { fruits, vegetables } from "../utils/Data";
 const Home = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -120,7 +121,9 @@ const Home = () => {
         }}
       >
         <ProductsTitle title={"Exclusive Offer"} />
-        <ProductsCarousel />
+        <ProductsCarousel data={vegetables}/>
+        <ProductsTitle title={"Best Selling"} />
+        <ProductsCarousel data={fruits}/>
         {/* Banner Section */}
         <View
           style={{

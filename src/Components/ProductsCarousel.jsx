@@ -7,8 +7,12 @@ import {
 } from "react-native-responsive-dimensions";
 import { AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart } from "../../Redux/CartSlice";
 
 export const ProductsCarousel = ({ data }) => {
+  const dispatch = useDispatch();
+  const storeData = useSelector((state) => state.CartSlice);
   const nav = useNavigation();
   return (
     <View>
@@ -48,7 +52,7 @@ export const ProductsCarousel = ({ data }) => {
                 {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
               </Text>
               <Text style={{ fontSize: 18, fontWeight: "400", marginTop: 10 }}>
-                {item.quantity}
+                {item.quant}
               </Text>
               <View
                 style={{
@@ -66,7 +70,25 @@ export const ProductsCarousel = ({ data }) => {
                 >
                   ₹ {item.price}
                 </Text>
-                <AntDesign name="plussquare" size={24} color="green" />
+                {storeData.some((value) => value.name == item.name) ? (
+                  <AntDesign
+                    name="minussquare"
+                    size={24}
+                    color="green"
+                    onPress={() => {
+                      dispatch(removeFromCart(item));
+                    }}
+                  />
+                ) : (
+                  <AntDesign
+                    name="plussquare"
+                    size={24}
+                    color="green"
+                    onPress={() => {
+                      dispatch(addToCart(item));
+                    }}
+                  />
+                )}
               </View>
             </View>
           </TouchableOpacity>

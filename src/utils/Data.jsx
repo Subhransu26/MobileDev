@@ -1,25 +1,25 @@
 export const vegetables = [
   {
     name: "Capsicum - Green",
-    quantity: "1 kg",
+    quant: "1 kg",
     price: 80,
     img: "https://www.bigbasket.com/media/uploads/p/m/10000067_24-fresho-capsicum-green.jpg?tr=w-1920,q=80",
   },
   {
     name: "Carrot",
-    quantity: "1 kg",
+    quant: "1 kg",
     price: 98,
     img: "https://img.freepik.com/free-photo/stack-carrots-tray-marble-surface_114579-63853.jpg?uid=R132004748&ga=GA1.1.1319569735.1721998556&semt=ais_user",
   },
   {
     name: "Cauliflower",
-    quantity: "1 pc (approx 400 to 600 g)",
+    quant: "1 pc (approx 400 to 600 g)",
     price: 42,
     img: "https://img.freepik.com/premium-photo/cauliflower-isolated-white_55883-5986.jpg?uid=R132004748&ga=GA1.1.1319569735.1721998556&semt=sph",
   },
   {
     name: "Corriander Leaves",
-    quantity: "100 g",
+    quant: "100 g",
     price: 10,
     img: "https://www.bigbasket.com/media/uploads/p/m/10000326_14-fresho-coriander-leaves.jpg?tr=w-1920,q=80",
   },
@@ -28,26 +28,26 @@ export const vegetables = [
 export const fruits = [
   {
     name: "apple",
-    quantity: "7pcs",
+    quant: "7pcs",
     price: 80,
     img: "https://img.freepik.com/free-photo/apples-red-fresh-mellow-juicy-perfect-whole-white-desk_179666-271.jpg?uid=R132004748&ga=GA1.1.1319569735.1721998556&semt=sph",
   },
   {
     name: "banana",
-    quantity: "7pcs",
+    quant: "7pcs",
     price: 40,
     img: "https://img.freepik.com/free-photo/yellow-banana-fruit_1203-7489.jpg?uid=R132004748&ga=GA1.1.1319569735.1721998556&semt=sph",
   },
   {
     name: "orange",
-    quantity: "7pcs",
+    quant: "7pcs",
     price: 80,
     img: "https://img.freepik.com/premium-photo/navel-orange-with-cut-half-leves-isolated-white-background_252965-943.jpg?uid=R132004748&ga=GA1.1.1319569735.1721998556&semt=sph",
   },
   {
     name: "pine apple",
-    quantity: "7pcs",
-    price: 150,
+    quant: "7pcs",
+    price: 200,
     img: "https://img.freepik.com/free-photo/raw-fresh-texture-vitamin-fruit_1172-220.jpg?uid=R132004748&ga=GA1.1.1319569735.1721998556&semt=sph",
   },
 ];

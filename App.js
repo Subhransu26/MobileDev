@@ -12,6 +12,7 @@ import Cart from "./src/Screens/Cart";
 import OrderPlaced from "./src/Screens/OrderPlaced";
 import { Provider } from "react-redux";
 import { Store } from "./Redux/store";
+import AppNavigator from "./AppNavigator"; 
 
 const Stack = createNativeStackNavigator();
 
@@ -42,7 +43,7 @@ const App = () => {
           />
           <Stack.Screen
             name="Home"
-            component={Home}
+            component={AppNavigator} 
             options={{ headerShown: false }}
           />
           <Stack.Screen
